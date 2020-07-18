@@ -5,26 +5,40 @@
 }
 
 :root {
-  --title-color: #322153;
-  --primary-color: #34cb79;
+  --dark-blue: #2d314d;
+  --lime-green: #31d35c;
+  --bright-cyan: #2bb7da;
+  --grayish-blue: #9698a6;
+  --light-grayish-blue: #f3f4f6;
+  --very-light-gray: #fafafa;
+  --width-container: 1100px;
 }
 
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
-div.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1100px;
-}
+/* HEADER */
 
 header {
-  height: 80px;
   display: flex;
-  align-items: center;
+  height: 80px;
+  flex: 1;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+header div.header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--width-container);
+  display: flex;
+  flex: 1;
   justify-content: center;
+  align-items: center;
 }
 
 header nav {
@@ -45,7 +59,7 @@ header ul li a {
   text-decoration: none;
   font-size: 14px;
   font-family: "Public Sans", sans-serif;
-  color: hsl(233, 8%, 62%);
+  color: var(--grayish-blue);
 }
 
 header span {
@@ -56,13 +70,60 @@ header span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #33D35E, #2AB6D9);
+  background: linear-gradient(135deg, #33d35e, #2ab6d9);
   color: white;
 }
-header span a {
+header .buttonOpenAccount {
   text-decoration: none;
   font-size: 14px;
   font-family: "Public Sans", sans-serif;
   color: white;
   font-weight: bold;
 }
+/* MAIN */
+#section-main-div {
+  background-color: var(--light-grayish-blue);
+}
+main div#main-div {
+  display: flex;
+  height: 50vh;
+  max-width: var(--width-container);
+  align-items: center;
+  justify-content: left;
+  margin: 0 auto;
+}
+
+main div#main-div-text {
+  width: 50%;
+}
+
+main div#main-div-text h1 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 54px;
+  color: var(--dark-blue);
+  font-weight: 250;
+}
+
+main div#main-div-text p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  color: var(--grayish-blue);
+  font-weight: 250;
+  margin-top: 40px;
+}
+
+main div#main-div-image {
+  position: relative;
+}
+main div#main-div-image img#intro {
+  position: absolute;
+  top: -500px;
+  left: 0px;
+}
+
+main div#main-div-image img#phone {
+  position: absolute;
+  top: -350px;
+  left: 200px;
+}
+/* DIVS */
