@@ -62,7 +62,7 @@ header ul li a {
   color: var(--grayish-blue);
 }
 
-header span {
+.buttonOpenAccount span {
   background-color: green;
   width: 160px;
   height: 44px;
@@ -73,7 +73,7 @@ header span {
   background: linear-gradient(135deg, #33d35e, #2ab6d9);
   color: white;
 }
-header .buttonOpenAccount {
+.buttonOpenAccount {
   text-decoration: none;
   font-size: 14px;
   font-family: "Public Sans", sans-serif;
@@ -110,6 +110,7 @@ main div#main-div-text p {
   color: var(--grayish-blue);
   font-weight: 250;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 main div#main-div-image {
@@ -126,4 +127,61 @@ main div#main-div-image img#phone {
   top: -350px;
   left: 200px;
 }
+
+main section#section-why {
+  display: flex;
+  max-width: var(--width-container);
+  height: 30vh;
+  align-items: center;
+  justify-content: left;
+  margin: 0 auto;
+}
+main {
+  background-color: var(--very-light-gray);
+}
+main div#why-div h1 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 45px;
+  color: var(--dark-blue);
+  font-weight: 250;
+}
+main div#why-div p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  color: var(--grayish-blue);
+  font-weight: 250;
+  margin-top: 40px;
+}
+
+main section#cards {
+  max-width: var(--width-container);
+  margin: 0 auto;
+}
+
+main section#cards div#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+main section#cards div#grid h1 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  color: var(--dark-blue);
+  font-weight: 250;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+main section#cards div#grid p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--grayish-blue);
+  font-weight: 250;
+  padding-bottom: 100px;
+}
 /* DIVS */
+p {
+  line-height: 25px;
+}
