@@ -20,6 +20,9 @@ body {
   overflow-x: hidden;
 }
 
+span, p, h1,h2,h3,a {
+  font-family: "Public Sans", sans-serif;
+}
 /* HEADER */
 
 header {
@@ -58,7 +61,6 @@ header ul li {
 header ul li a {
   text-decoration: none;
   font-size: 14px;
-  font-family: "Public Sans", sans-serif;
   color: var(--grayish-blue);
 }
 
@@ -76,21 +78,18 @@ header ul li a {
 .buttonOpenAccount {
   text-decoration: none;
   font-size: 14px;
-  font-family: "Public Sans", sans-serif;
   color: white;
   font-weight: bold;
 }
 /* MAIN */
 #section-main-div {
-  background-color: var(--light-grayish-blue);
+  background-color: var(--very-light-gray);
 }
 main div#main-div {
   display: flex;
   height: 50vh;
-  max-width: var(--width-container);
   align-items: center;
   justify-content: left;
-  margin: 0 auto;
 }
 
 main div#main-div-text {
@@ -98,14 +97,12 @@ main div#main-div-text {
 }
 
 main div#main-div-text h1 {
-  font-family: "Public Sans", sans-serif;
   font-size: 54px;
   color: var(--dark-blue);
   font-weight: 250;
 }
 
 main div#main-div-text p {
-  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   color: var(--grayish-blue);
   font-weight: 250;
@@ -130,30 +127,30 @@ main div#main-div-image img#phone {
 
 main section#section-why {
   display: flex;
-  max-width: var(--width-container);
   height: 30vh;
   align-items: center;
   justify-content: left;
-  margin: 0 auto;
 }
 main {
-  background-color: var(--very-light-gray);
+  background-color: var(--light-grayish-blue);
 }
-main div#why-div h1 {
-  font-family: "Public Sans", sans-serif;
-  font-size: 45px;
+main div#why-div h1,
+main section#articles h1 {
+  font-size: 40px;
   color: var(--dark-blue);
   font-weight: 250;
 }
 main div#why-div p {
-  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   color: var(--grayish-blue);
   font-weight: 250;
   margin-top: 40px;
 }
 
-main section#cards {
+main section#cards,
+main section#section-why,
+main div#main-div,
+main section#articles {
   max-width: var(--width-container);
   margin: 0 auto;
 }
@@ -165,7 +162,6 @@ main section#cards div#grid {
 }
 
 main section#cards div#grid h1 {
-  font-family: "Public Sans", sans-serif;
   font-size: 24px;
   color: var(--dark-blue);
   font-weight: 250;
@@ -174,12 +170,72 @@ main section#cards div#grid h1 {
 }
 
 main section#cards div#grid p {
-  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   line-height: 25px;
   color: var(--grayish-blue);
   font-weight: 250;
   padding-bottom: 100px;
+}
+
+#color-article{
+  background-color: var(--very-light-gray);
+  padding-top: 100px;
+}
+
+main section div.articles-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+main section#articles h1 {
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+main section div.articles-cards div.article {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #ffffff;
+}
+main section div.articles-cards div.article .image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+main section div.articles-cards div.article .image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px 10px 0 0;
+}
+
+.content {
+  margin: 0 25px;
+}
+
+.content span {
+  font-size: 10px;
+  color: var(--grayish-blue);
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.content h3 {
+  color: var(--dark-blue);
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.content p {
+  margin-top: 10px;
+  color: var(--grayish-blue);
+  line-height: 20px;
 }
 /* DIVS */
 p {
