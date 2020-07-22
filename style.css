@@ -150,7 +150,8 @@ main div#why-div p {
 main section#cards,
 main section#section-why,
 main div#main-div,
-main section#articles {
+main section#articles,
+footer .footer {
   max-width: var(--width-container);
   margin: 0 auto;
 }
@@ -180,6 +181,7 @@ main section#cards div#grid p {
 #color-article{
   background-color: var(--very-light-gray);
   padding-top: 100px;
+  padding-bottom: 130px;
 }
 
 main section div.articles-cards {
@@ -236,6 +238,68 @@ main section div.articles-cards div.article .image img {
   margin-top: 10px;
   color: var(--grayish-blue);
   line-height: 20px;
+}
+/* Footer */
+footer {
+  background-color: var(--dark-blue);
+  height: 200px;
+}
+
+footer div.footer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+footer div.medias {
+  margin-top: 50px;
+  width: 350px;
+}
+
+footer div.social {
+  margin-top: 45px;
+}
+
+footer div.social img {
+  padding: 5px;
+}
+
+footer div.footer-links {
+  margin-top: 50px;
+}
+
+footer div.footer-links .list-1 {
+  margin-right: 110px;
+}
+
+footer div.footer-links ul{
+  list-style: none;
+  color: white;
+  font-family: "Public Sans", sans-serif;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer div.footer-links ul li {
+  padding: 10px 0;
+}
+
+footer div.footer-button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+footer div.footer-button a {
+  margin-top: 40px;
+}
+
+footer div.footer-button p {
+  color: var(--grayish-blue);
+  margin-top: 30px;
 }
 /* DIVS */
 p {
