@@ -87,7 +87,7 @@ header ul li a {
 }
 main div#main-div {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   align-items: center;
   justify-content: left;
 }
@@ -115,13 +115,13 @@ main div#main-div-image {
 }
 main div#main-div-image img#intro {
   position: absolute;
-  top: -500px;
+  top: -590px;
   left: 0px;
 }
 
 main div#main-div-image img#phone {
   position: absolute;
-  top: -350px;
+  top: -450px;
   left: 200px;
 }
 
