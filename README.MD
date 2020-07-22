@@ -7,3 +7,6 @@ Eu escolhi fazer o desafio do <a href="https://www.frontendmentor.io/challenges/
 <img src="./images/challengeMy.png"></img>
 ## Imagem usada como referência
 <img src="./images/challenge.jpg"></img>
+<br>
+### Ficou parecido? 😃
+Obs: No meu projeto eu traduzi tudo para português.
