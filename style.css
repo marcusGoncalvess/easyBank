@@ -20,7 +20,12 @@ body {
   overflow-x: hidden;
 }
 
-span, p, h1,h2,h3,a {
+span,
+p,
+h1,
+h2,
+h3,
+a {
   font-family: "Public Sans", sans-serif;
 }
 /* HEADER */
@@ -80,6 +85,7 @@ header ul li a {
   font-size: 14px;
   color: white;
   font-weight: bold;
+  transition: 0.5s;
 }
 /* MAIN */
 #section-main-div {
@@ -178,7 +184,7 @@ main section#cards div#grid p {
   padding-bottom: 100px;
 }
 
-#color-article{
+#color-article {
   background-color: var(--very-light-gray);
   padding-top: 100px;
   padding-bottom: 130px;
@@ -272,7 +278,7 @@ footer div.footer-links .list-1 {
   margin-right: 110px;
 }
 
-footer div.footer-links ul{
+footer div.footer-links ul {
   list-style: none;
   color: white;
   font-family: "Public Sans", sans-serif;
@@ -304,4 +310,31 @@ footer div.footer-button p {
 /* DIVS */
 p {
   line-height: 25px;
+}
+/* Hover */
+header a:hover {
+  color: var(--dark-blue);
+  transition: 0.5s;
+}
+
+.buttonOpenAccount:hover {
+  opacity: 0.5;
+}
+
+h3:hover {
+  color: var(--lime-green);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: var(--lime-green);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer .social {
+  color: var(--lime-green);
+  transition: 0.5s;
+  cursor: pointer;
 }
